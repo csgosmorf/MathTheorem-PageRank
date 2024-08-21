@@ -10,7 +10,7 @@ The ranking of every proofwiki page containing a 'Proof' or 'Definition' or 'The
 
 The weighted graph fed into the pagerank algorithm is in weighted_graph.json
 
-The full output (with numerical scores) from the PageRank algorithm is in ranks17.json (17 because there were ranks{i}.json for i=0 to i=16 from the 1st to 17*5=85th iterations of the PageRank alg).
+The full output (with numerical scores) from the PageRank algorithm is in ranks17.json
 
 Before running list_them.py, I ran rank.py until it reached the output:
 i = 85: error = 1.8378147248534777e-06
