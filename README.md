@@ -2,7 +2,7 @@
 A ranking of math theorems and definitions using the PageRank algorithm
 
 # Details
-The ranking of theorems is in theorem_ranks.txt
+The ranking of propositions with "Theorem" in the name is in theorem_ranks.txt
 
 The ranking of definitions is in definition_ranks.txt
 
