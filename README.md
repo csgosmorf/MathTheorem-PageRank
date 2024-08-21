@@ -12,6 +12,8 @@ The weighted graph fed into the pagerank algorithm is in weighted_graph.json
 
 The full output (with numerical scores) from the PageRank algorithm is in ranks17.json
 
+The list of all propositions on proofwiki (i.e. titles of pages with a "Theorem" section) are in propositions.json
+
 Before running list_them.py, I ran rank.py until it reached the output:
 i = 85: error = 1.8378147248534777e-06
 
