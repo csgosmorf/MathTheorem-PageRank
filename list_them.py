@@ -33,7 +33,13 @@ def writeRanks(filePath, rankList):
         for i, (name, value) in enumerate(rankList, start=1):
             outfile.write(f"{i}. {name}\n")
 
+props_dict = read_json_to_dict('propositions.json')
+props = set(props_dict['Theorems'])
+
+prop_ranks = [(name, value) for name, value in ranks if name in props]
+
 writeRanks('all_ranks.txt', ranks)
 writeRanks('nondef_ranks.txt', nondef_ranks)
 writeRanks('theorem_ranks.txt', theorem_ranks)
 writeRanks('definition_ranks.txt', defn_ranks)
+writeRanks('proposition_ranks.txt', prop_ranks)
