@@ -83,6 +83,8 @@ for i,(page, remainder) in enumerate(pages):
     sections = dict(get_blocks(page, '== ', ' =='))
     if 'Theorem' in sections or 'Definition' in sections or 'Proof' in sections:
         graph[title] = []
+        if 'Theorem' in sections:
+            theorem_pages.append(title)
 
 for i,(page, remainder) in enumerate(pages):
     title = get_blocks(page, '<title>', '</title>')[0][0]
@@ -111,3 +113,8 @@ for name in graph:
         weighted_graph[name][link_name] += 1.0 / num_links
 
 save_dict_to_json(weighted_graph, 'weighted_graph.json')
+
+thms_dict = dict()
+thms_dict['Theorems'] = theorem_pages
+
+save_dict_to_json(thms_dict, 'propositions.json')
