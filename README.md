@@ -3,7 +3,9 @@ A ranking of math theorems and definitions using the PageRank algorithm
 
 # Details
 The ranking of theorems is in theorem_ranks.txt
+
 The ranking of definitions is in definition_ranks.txt
+
 The ranking of every proofwiki page containing a 'Proof' or 'Definition' or 'Theorem' section is in all_ranks.txt
 
 The weighted graph fed into the pagerank algorithm is in weighted_graph.json
